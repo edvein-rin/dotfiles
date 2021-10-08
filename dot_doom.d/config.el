@@ -65,7 +65,28 @@
 
 ;; Flycheck
 ;; (setq-default flycheck-disabled-checkers '(lsp))
-(add-hook 'rjsx-mode-hook #'lsp-diagnostics-flycheck-disable)
-(add-hook 'js-mode-hook #'lsp-diagnostics-flycheck-disable)
-(add-hook 'typescript-mode-hook #'lsp-diagnostics-flycheck-disable)
-(add-hook 'typescript-tsx-mode-hook #'lsp-diagnostics-flycheck-disable)
+;; (setq lsp-diagnostic-provider :none)
+
+(defun my/use-eslint-from-node-modules ()
+  (let* ((root (locate-dominating-file
+                (or (buffer-file-name) default-directory)
+                "node_modules"))
+         (eslint
+          (and root
+               (expand-file-name "node_modules/.bin/eslint"
+                                 root))))
+    (when (and eslint (file-executable-p eslint))
+      (setq-local flycheck-javascript-eslint-executable eslint)))
+  (setq flycheck--automatically-disabled-checkers nil)
+)
+
+(add-hook 'flycheck-mode-hook #'my/use-eslint-from-node-modules)
+
+(add-hook 'js-mode-hook (lambda () (flycheck-select-checker 'javascript-eslint)))
+(add-hook 'rjsx-mode-hook (lambda () (flycheck-select-checker 'javascript-eslint)))
+(add-hook 'typescript-mode-hook (lambda ()
+                                      (flycheck-select-checker 'javascript-eslint)
+                                      (flycheck-add-next-checker 'javascript-eslint 'typescript-tslint)))
+(add-hook 'typescript-tsx-mode-hook (lambda ()
+                                      (flycheck-select-checker 'javascript-eslint)
+                                      (flycheck-add-next-checker 'javascript-eslint 'typescript-tslint)))
