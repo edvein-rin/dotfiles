@@ -54,3 +54,18 @@
 ;; they are implemented.
 
 (add-to-list 'initial-frame-alist '(fullscreen . maximized))
+;; (add-hook 'window-setup-hook #'doom/quickload-session)
+
+;; Indent levels
+(setq standard-indent 2)
+(add-hook 'python-mode-hook
+          (lambda ()
+            (setq indent-tabs-mode nil)
+            (setq tab-width 4)))
+
+;; Flycheck
+;; (setq-default flycheck-disabled-checkers '(lsp))
+(add-hook 'rjsx-mode-hook #'lsp-diagnostics-flycheck-disable)
+(add-hook 'js-mode-hook #'lsp-diagnostics-flycheck-disable)
+(add-hook 'typescript-mode-hook #'lsp-diagnostics-flycheck-disable)
+(add-hook 'typescript-tsx-mode-hook #'lsp-diagnostics-flycheck-disable)
