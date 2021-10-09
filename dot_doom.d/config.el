@@ -64,9 +64,6 @@
             (setq tab-width 4)))
 
 ;; Flycheck
-;; (setq-default flycheck-disabled-checkers '(lsp))
-;; (setq lsp-diagnostic-provider :none)
-
 (defun my/use-eslint-from-node-modules ()
   (let* ((root (locate-dominating-file
                 (or (buffer-file-name) default-directory)
@@ -76,17 +73,12 @@
                (expand-file-name "node_modules/.bin/eslint"
                                  root))))
     (when (and eslint (file-executable-p eslint))
-      (setq-local flycheck-javascript-eslint-executable eslint)))
-  (setq flycheck--automatically-disabled-checkers nil)
+      (setq-local flycheck-javascript-eslint-executable eslint)
+    )
+  )
 )
 
 (add-hook 'flycheck-mode-hook #'my/use-eslint-from-node-modules)
-
-(add-hook 'js-mode-hook (lambda () (flycheck-select-checker 'javascript-eslint)))
-(add-hook 'rjsx-mode-hook (lambda () (flycheck-select-checker 'javascript-eslint)))
-(add-hook 'typescript-mode-hook (lambda ()
-                                      (flycheck-select-checker 'javascript-eslint)
-                                      (flycheck-add-next-checker 'javascript-eslint 'typescript-tslint)))
-(add-hook 'typescript-tsx-mode-hook (lambda ()
-                                      (flycheck-select-checker 'javascript-eslint)
-                                      (flycheck-add-next-checker 'javascript-eslint 'typescript-tslint)))
+;; Use dir locals for specific projects:
+;; cd project-root
+;; M-x add-dir-local-variable RET js-mode RET flycheck-checker RET javascript-jshint
