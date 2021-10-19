@@ -64,6 +64,11 @@
             (setq tab-width 4)))
 
 ;; Flycheck
+;;
+;; NOTE Use dir locals for specific projects:
+;; cd project-root
+;; M-x add-dir-local-variable RET js-mode RET flycheck-checker RET javascript-jshint
+;;
 (defun my/use-eslint-from-node-modules ()
   (let* ((root (locate-dominating-file
                 (or (buffer-file-name) default-directory)
@@ -79,6 +84,60 @@
 )
 
 (add-hook 'flycheck-mode-hook #'my/use-eslint-from-node-modules)
-;; Use dir locals for specific projects:
-;; cd project-root
-;; M-x add-dir-local-variable RET js-mode RET flycheck-checker RET javascript-jshint
+
+;; LSP
+(setq lsp-ui-doc-enable t)
+(setq lsp-ui-doc-show-with-cursor nil)
+(setq lsp-ui-doc-show-with-mouse nil)
+
+(setq lsp-lens-enable nil)
+(setq lsp-headerline-breadcrumb-enable nil)
+(setq lsp-ui-sideline-enable nil)
+
+;; Native comp
+(when (and (fboundp 'native-comp-available-p)
+           (native-comp-available-p))
+  (progn
+    (setq native-comp-async-report-warnings-errors nil)
+    (setq comp-deferred-compilation t)
+    (add-to-list 'native-comp-eln-load-path (expand-file-name "eln-cache/" user-emacs-directory))
+    (setq package-native-compile t)
+    ))
+
+
+;; NOTE Editor
+;; Focus new window after splitting
+(setq evil-split-window-below t
+      evil-vsplit-window-right t)
+
+
+;; NOTE Evil
+
+;; Implicit /g flag on evil ex substitution, because I less often want the
+;; default behavior.
+(setq evil-ex-substitute-global t)
+
+
+;; NOTE Optimizations
+
+;; Flycheck inline errors
+(setq flycheck-highlighting-mode 'lines)
+
+;; No line numbers
+;; (setq display-line-numbers-type nil)
+;; No auto complition
+;; (setq company-idle-delay nil)
+
+;; Disable invasive lsp-mode features
+(setq lsp-ui-sideline-enable nil   ; not anymore useful than flycheck
+      lsp-ui-doc-enable nil        ; slow and redundant with K
+      lsp-enable-symbol-highlighting nil
+      ;; If an LSP server isn't present when I start a prog-mode buffer, you
+      ;; don't need to tell me. I know. On some systems I don't care to have a
+      ;; whole development environment for some ecosystems.
+      +lsp-prompt-to-install-server 'quiet)
+;; Prevents some cases of Emacs flickering
+;; (add-to-list 'default-frame-alist '(inhibit-double-buffering . t))
+
+;; Don’t compact font caches during GC.
+;; (setq inhibit-compacting-font-caches t)

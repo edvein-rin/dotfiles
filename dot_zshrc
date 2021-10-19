@@ -107,7 +107,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 alias editzsh="nvim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias spotify="sh ~/.spotify.sh &;disown"
+alias spotify="LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify > /dev/null 2>&1 &;disown"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -117,3 +117,5 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
 [ -n "$PS1" ] && \
     [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
         eval "$("$BASE16_SHELL/profile_helper.sh")"
+
+
