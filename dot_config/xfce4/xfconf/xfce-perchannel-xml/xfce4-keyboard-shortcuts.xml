@@ -54,6 +54,8 @@
       <property name="&lt;Super&gt;f" type="string" value="exo-open --launch FileManager"/>
       <property name="&lt;Super&gt;b" type="string" value="exo-open --launch WebBrowser"/>
       <property name="&lt;Super&gt;c" type="string" value="galculator"/>
+      <property name="&lt;Super&gt;space" type="string" value="rofi -show drun -matching fuzzy -sort -sorting-method fzf"/>
+      <property name="&lt;Super&gt;t" type="string" value="kitty"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
