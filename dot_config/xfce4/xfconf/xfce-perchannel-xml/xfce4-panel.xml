@@ -52,6 +52,8 @@
         <value type="string" value="clipman"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="Skype1"/>
+        <value type="string" value="discord1"/>
         <value type="string" value="TelegramDesktop"/>
         <value type="string" value="MSM Notifier"/>
         <value type="string" value="blueman"/>
@@ -63,6 +65,7 @@
     </property>
     <property name="plugin-9" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="mpris-players" type="string" value="spotify"/>
     </property>
     <property name="plugin-5" type="string" value="clock">
       <property name="digital-format" type="string" value="%b %d %a %R"/>
