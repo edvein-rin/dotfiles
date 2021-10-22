@@ -54,11 +54,11 @@
       <property name="&lt;Super&gt;f" type="string" value="exo-open --launch FileManager"/>
       <property name="&lt;Super&gt;b" type="string" value="exo-open --launch WebBrowser"/>
       <property name="&lt;Super&gt;c" type="string" value="galculator"/>
-      <property name="&lt;Super&gt;space" type="string" value="rofi -show drun -matching fuzzy -sort -sorting-method fzf"/>
       <property name="&lt;Super&gt;t" type="string" value="kitty"/>
-      <property name="&lt;Super&gt;w" type="string" value="rofi -show window"/>
-      <property name="&lt;Super&gt;r" type="string" value="rofi -show run"/>
-      <property name="&lt;Super&gt;x" type="string" value="rofi -show power-menu -modi power-menu:rofi-power-menu"/>
+      <property name="&lt;Super&gt;space" type="string" value="rofi -show drun -matching fuzzy -sort -sorting-method fzf -kb-cancel Super_L"/>
+      <property name="&lt;Super&gt;x" type="string" value="rofi -show power-menu -modi power-menu:rofi-power-menu -kb-cancel Super_L"/>
+      <property name="&lt;Super&gt;w" type="string" value="rofi -show window -kb-cancel Super_L"/>
+      <property name="&lt;Super&gt;r" type="string" value="rofi -show run -kb-cancel Super_L"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
