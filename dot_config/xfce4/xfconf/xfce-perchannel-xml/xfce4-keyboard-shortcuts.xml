@@ -47,7 +47,6 @@
       <property name="&lt;Primary&gt;&lt;Alt&gt;x" type="string" value="xkill"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;m" type="string" value="xfce4-taskmanager"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="string" value="xfce4-terminal --drop-down"/>
-      <property name="Print" type="string" value="xfce4-screenshooter -fd 1"/>
       <property name="&lt;Shift&gt;Print" type="string" value="xfce4-screenshooter -wd 1"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;Print" type="string" value="xfce4-screenshooter -r"/>
       <property name="&lt;Alt&gt;F1" type="string" value="xfce4-popup-whiskermenu"/>
@@ -59,6 +58,7 @@
       <property name="&lt;Super&gt;r" type="string" value="rofi -show run -kb-cancel Escape,Super_L"/>
       <property name="&lt;Super&gt;x" type="string" value="rofi -show power-menu -modi power-menu:rofi-power-menu -kb-cancel Escape,Super_L"/>
       <property name="&lt;Super&gt;w" type="string" value="rofi -show window -kb-cancel Escape,Super_L"/>
+      <property name="Print" type="string" value="flameshot gui"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

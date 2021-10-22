@@ -66,6 +66,7 @@
     <property name="plugin-9" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
       <property name="mpris-players" type="string" value="firefox.instance5122;firefox.instance7959;spotify"/>
+      <property name="blacklisted-players" type="string" value=""/>
     </property>
     <property name="plugin-5" type="string" value="clock">
       <property name="digital-format" type="string" value="%b %d %a %R"/>
