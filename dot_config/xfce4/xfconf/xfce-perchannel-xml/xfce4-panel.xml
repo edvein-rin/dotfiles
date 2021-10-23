@@ -52,6 +52,7 @@
         <value type="string" value="clipman"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="Slack1"/>
         <value type="string" value="Skype1"/>
         <value type="string" value="discord1"/>
         <value type="string" value="TelegramDesktop"/>
@@ -65,7 +66,7 @@
     </property>
     <property name="plugin-9" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="firefox.instance5122;firefox.instance7959;spotify"/>
+      <property name="mpris-players" type="string" value="firefox.instance2133;firefox.instance5122;firefox.instance7959;spotify"/>
       <property name="blacklisted-players" type="string" value=""/>
     </property>
     <property name="plugin-5" type="string" value="clock">

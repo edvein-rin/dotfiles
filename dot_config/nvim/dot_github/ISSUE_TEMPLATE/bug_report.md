@@ -1,32 +1,21 @@
 ---
 name: Bug report
 about: Create a report to help us improve
-title: ''
-labels: ''
-assignees: ''
-
+title: ""
+labels: ""
+assignees: ""
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+<!-- bug reporting without issue template will be closed automatically -->
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+## Expected behavior, english is required
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+## The reproduce ways from Vim starting (Required!)
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+## Output of the `:SPDebugInfo!`
 
-**Desktop (please complete the following information):**
- - Operating System
- - Terminal
- - Version of Neovim
+## Screenshots
 
-**Additional context**
-Add any other context about the problem here.
+If you have any screenshots for this issue, please upload here. BTW you can use https://asciinema.org/ for recording video in terminal.
+
+<!-- please remove the issue template when request for a feature -->
