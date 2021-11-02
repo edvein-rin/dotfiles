@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <channel name="xfce4-panel" version="1.0">
-  <property name="panels" type="uint" value="1">
+  <property name="panels" type="array">
+    <value type="int" value="0"/>
+    <value type="int" value="1"/>
     <property name="panel-0" type="empty">
-      <property name="position" type="string" value="p=8;x=960;y=1061"/>
+      <property name="position" type="string" value="p=8;x=2880;y=1065"/>
       <property name="length" type="uint" value="100"/>
       <property name="position-locked" type="bool" value="true"/>
       <property name="plugin-ids" type="array">
@@ -19,11 +21,36 @@
       <property name="role" type="string" value="xfce4-panel-12965750720"/>
       <property name="length-adjust" type="bool" value="true"/>
       <property name="background-style" type="uint" value="0"/>
-      <property name="size" type="uint" value="36"/>
+      <property name="size" type="uint" value="28"/>
       <property name="mode" type="uint" value="0"/>
       <property name="autohide-behavior" type="uint" value="0"/>
       <property name="disable-struts" type="bool" value="false"/>
+      <property name="icon-size" type="uint" value="0"/>
+      <property name="span-monitors" type="bool" value="false"/>
+    </property>
+    <property name="panel-1" type="empty">
+      <property name="position" type="string" value="p=8;x=960;y=1061"/>
+      <property name="size" type="uint" value="36"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="span-monitors" type="bool" value="false"/>
+      <property name="length" type="uint" value="100"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="2"/>
+        <value type="int" value="34"/>
+        <value type="int" value="29"/>
+        <value type="int" value="8"/>
+        <value type="int" value="23"/>
+        <value type="int" value="33"/>
+        <value type="int" value="20"/>
+        <value type="int" value="31"/>
+        <value type="int" value="30"/>
+        <value type="int" value="32"/>
+        <value type="int" value="17"/>
+        <value type="int" value="27"/>
+      </property>
       <property name="icon-size" type="uint" value="16"/>
+      <property name="nrows" type="uint" value="1"/>
+      <property name="disable-struts" type="bool" value="false"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -52,6 +79,8 @@
         <value type="string" value="clipman"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="QOpenVPN"/>
+        <value type="string" value="MEGAsync"/>
         <value type="string" value="Slack1"/>
         <value type="string" value="Skype1"/>
         <value type="string" value="discord1"/>
@@ -66,7 +95,7 @@
     </property>
     <property name="plugin-9" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="firefox.instance2133;firefox.instance5122;firefox.instance7959;spotify"/>
+      <property name="mpris-players" type="string" value="firefox.instance1397;firefox.instance1431;firefox.instance1434;firefox.instance1436;firefox.instance1453;firefox.instance1503;firefox.instance1510;firefox.instance2133;firefox.instance2421;firefox.instance5122;firefox.instance7141;firefox.instance7959;firefox.instance8898;spotify"/>
       <property name="blacklisted-players" type="string" value=""/>
     </property>
     <property name="plugin-5" type="string" value="clock">
@@ -84,6 +113,88 @@
       <property name="display-tooltip-icon" type="bool" value="true"/>
     </property>
     <property name="plugin-1" type="string" value="battery"/>
+    <property name="plugin-2" type="string" value="pager">
+      <property name="rows" type="uint" value="1"/>
+      <property name="miniature-view" type="bool" value="false"/>
+    </property>
+    <property name="plugin-8" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+      <property name="expand" type="bool" value="true"/>
+    </property>
+    <property name="plugin-17" type="string" value="cpugraph"/>
+    <property name="plugin-20" type="string" value="fsguard"/>
+    <property name="plugin-23" type="string" value="netload"/>
+    <property name="plugin-27" type="string" value="systemload">
+      <property name="cpu" type="empty">
+        <property name="label" type="string" value="CPU"/>
+      </property>
+      <property name="memory" type="empty">
+        <property name="label" type="string" value="MEM"/>
+        <property name="enabled" type="bool" value="true"/>
+      </property>
+      <property name="network" type="empty">
+        <property name="label" type="string" value="NET"/>
+        <property name="enabled" type="bool" value="false"/>
+      </property>
+      <property name="swap" type="empty">
+        <property name="label" type="string" value="SWAP"/>
+      </property>
+      <property name="uptime" type="empty">
+        <property name="enabled" type="bool" value="true"/>
+      </property>
+    </property>
+    <property name="plugin-29" type="string" value="weather">
+      <property name="location" type="empty">
+        <property name="name" type="string" value="Brovary, Ukraine"/>
+        <property name="latitude" type="string" value="50.518200"/>
+        <property name="longitude" type="string" value="30.804100"/>
+      </property>
+      <property name="msl" type="int" value="132"/>
+      <property name="timezone" type="string" value="Europe/Kiev"/>
+      <property name="offset" type="string" value="+02:00"/>
+      <property name="cache-max-age" type="int" value="172800"/>
+      <property name="power-saving" type="bool" value="true"/>
+      <property name="units" type="empty">
+        <property name="temperature" type="int" value="0"/>
+        <property name="pressure" type="int" value="0"/>
+        <property name="windspeed" type="int" value="2"/>
+        <property name="precipitation" type="int" value="0"/>
+        <property name="altitude" type="int" value="0"/>
+        <property name="apparent-temperature" type="int" value="0"/>
+      </property>
+      <property name="round" type="bool" value="true"/>
+      <property name="single-row" type="bool" value="true"/>
+      <property name="tooltip-style" type="int" value="1"/>
+      <property name="forecast" type="empty">
+        <property name="layout" type="int" value="1"/>
+        <property name="days" type="int" value="5"/>
+      </property>
+      <property name="theme-dir" type="string" value="/usr/share/xfce4/weather/icons/liquid-dark"/>
+      <property name="scrollbox" type="empty">
+        <property name="show" type="bool" value="true"/>
+        <property name="animate" type="bool" value="true"/>
+        <property name="lines" type="int" value="1"/>
+        <property name="color" type="string" value="rgba(0,0,0,0)"/>
+        <property name="use-color" type="bool" value="false"/>
+      </property>
+      <property name="labels" type="empty">
+        <property name="label0" type="int" value="3"/>
+        <property name="label1" type="int" value="5"/>
+      </property>
+    </property>
+    <property name="plugin-30" type="string" value="fsguard"/>
+    <property name="plugin-31" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-32" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-33" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-34" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
   </property>
   <property name="configver" type="int" value="2"/>
 </channel>
