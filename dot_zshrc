@@ -9,7 +9,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/edvein-rin/.oh-my-zsh"
+export ZSH="/home/etsakhlo/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -107,6 +107,11 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias spotify="LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify > /dev/null 2>&1 &;disown"
+alias izi="sh ~/MEGA/EVO/izi.sh &;disown"
+
+function launch {
+  nohup $1 >/dev/null 2>/dev/null & disown; exit
+}
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

@@ -95,7 +95,7 @@
     </property>
     <property name="plugin-9" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="firefox.instance1397;firefox.instance1431;firefox.instance1434;firefox.instance1436;firefox.instance1453;firefox.instance1503;firefox.instance1510;firefox.instance2133;firefox.instance2421;firefox.instance5122;firefox.instance7141;firefox.instance7959;firefox.instance8898;spotify"/>
+      <property name="mpris-players" type="string" value="firefox.instance10966;firefox.instance1397;firefox.instance1431;firefox.instance1434;firefox.instance1436;firefox.instance1453;firefox.instance14631;firefox.instance1503;firefox.instance1510;firefox.instance1806;firefox.instance1845;firefox.instance2133;firefox.instance2254;firefox.instance2421;firefox.instance5122;firefox.instance7141;firefox.instance7959;firefox.instance81316;firefox.instance8898;firefox.instance9225;spotify"/>
       <property name="blacklisted-players" type="string" value=""/>
     </property>
     <property name="plugin-5" type="string" value="clock">
@@ -176,10 +176,6 @@
         <property name="lines" type="int" value="1"/>
         <property name="color" type="string" value="rgba(0,0,0,0)"/>
         <property name="use-color" type="bool" value="false"/>
-      </property>
-      <property name="labels" type="empty">
-        <property name="label0" type="int" value="3"/>
-        <property name="label1" type="int" value="5"/>
       </property>
     </property>
     <property name="plugin-30" type="string" value="fsguard"/>
