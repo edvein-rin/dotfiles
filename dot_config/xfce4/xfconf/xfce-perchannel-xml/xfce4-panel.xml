@@ -27,6 +27,7 @@
       <property name="disable-struts" type="bool" value="false"/>
       <property name="icon-size" type="uint" value="0"/>
       <property name="span-monitors" type="bool" value="false"/>
+      <property name="output-name" type="string" value="Primary"/>
     </property>
     <property name="panel-1" type="empty">
       <property name="position" type="string" value="p=8;x=960;y=1061"/>
@@ -51,6 +52,7 @@
       <property name="icon-size" type="uint" value="16"/>
       <property name="nrows" type="uint" value="1"/>
       <property name="disable-struts" type="bool" value="false"/>
+      <property name="output-name" type="string" value="HDMI-1"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -95,7 +97,7 @@
     </property>
     <property name="plugin-9" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="firefox.instance10966;firefox.instance1397;firefox.instance1431;firefox.instance1434;firefox.instance1436;firefox.instance1453;firefox.instance14631;firefox.instance1503;firefox.instance1510;firefox.instance1806;firefox.instance1845;firefox.instance2133;firefox.instance2254;firefox.instance2421;firefox.instance5122;firefox.instance7141;firefox.instance7959;firefox.instance81316;firefox.instance8898;firefox.instance9225;spotify"/>
+      <property name="mpris-players" type="string" value="firefox.instance10966;firefox.instance1397;firefox.instance1431;firefox.instance1434;firefox.instance1436;firefox.instance1453;firefox.instance14631;firefox.instance1503;firefox.instance1510;firefox.instance1806;firefox.instance1845;firefox.instance2031;firefox.instance2133;firefox.instance2254;firefox.instance2421;firefox.instance2909;firefox.instance4943;firefox.instance5122;firefox.instance7141;firefox.instance7959;firefox.instance81316;firefox.instance8898;firefox.instance9225;spotify"/>
       <property name="blacklisted-players" type="string" value=""/>
     </property>
     <property name="plugin-5" type="string" value="clock">
