@@ -1,11 +1,11 @@
 Use_Label=true
 Show_Values=true
 Show_Bars=true
-Colorize_Values=false
-Color_In=rgb(143,240,164)
-Color_Out=rgb(255,190,111)
+Colorize_Values=true
+Color_In=rgb(255,79,0)
+Color_Out=rgb(255,229,0)
 Text=Net
-Network_Device=wlp0s20f3
+Network_Device=enp0s20f0u2
 Max_In=4096
 Max_Out=4096
 Auto_Max=true
