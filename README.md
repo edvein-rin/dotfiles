@@ -39,7 +39,7 @@ spotify, rust, spotify-adblock
 **Pacman:** krita, jupyter-notebook, libreoffice-still
 
 
-## OS Installing Guide
+## Installing Guide
 
 ### 1. Download [Manjaro XFCE ISO](https://manjaro.org/downloads/official/xfce/).
 ### 2. Burn the ISO on USB stick:
@@ -57,8 +57,7 @@ sudo fdisk -l
 **On Windows:**  
 Use [Rufus](http://rufus.ie/en/).
 
-### 3. Boot in Manjaro Live CD.
-### 4. Install OS (Manjaro Welcome):
+### 3. Boot in Manjaro Live CD and run Welcome Manjaro to start installing OS:
 - Locale is **ja** :jp: and keyboard is **English (US) Default** :us:
 - Encrypt a disk! :lock:  
 — *Why?*  
@@ -81,4 +80,43 @@ Don't forget labels and that order of partitions is important. Also leave space 
 — *Then what's the point of setting password at all?*  
 — Safety from your curious comrads.
 
+### 4. Sync Dot Files:
+Install chezmoi:  
+```bash
+pacman -S chezmoi
+```
+Sync dotfiles:  
+```bash
+chezmoi init --apply edvein-rin
+```
+Run post install script (installs apps):
+```bash
+sh ~/Scripts/post-os-install.sh
+```
 
+### 5. Set Up Firefox:
+1. Login in Firefox Sync.
+2. LastPass sign in.
+3. Sync YomiChan [settings](https://gist.github.com/edvein-rin/08c58d56e7b12e9447db50b250497cb7) and fonts.
+4. Sync STG [pages](https://gist.github.com/edvein-rin/12df537778bea03d8f9d534abb7504b4).
+5. Sync SurfingKeys [config](https://gist.github.com/edvein-rin/101b59b2158bb32ebb1735474ad6c615).
+6. Customize toolbar: icons in order, remove header.
+7. Login in Google accounts.
+
+### 6. Login In Apps:
+1. Telegram
+2. Slack
+3. Spotify
+4. Mega
+5. Discord
+6. Skype
+
+### 7. Post Cloud Storage Sync (Mega) Installation Process
+Run (syncs ssh keys with cloud):
+```bash
+sh ~/Scripts/post-mega-login-in-install.sh
+```
+??? logining in Github and Gitlab accounts ???
+
+### 8. Install Windows (Optional) :window:
+After this you may need `sudo update-grub` for Windows to appear in grub.
