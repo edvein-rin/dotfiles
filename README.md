@@ -1,8 +1,8 @@
-# Dotfiles
+# Dotfiles :gear:
 
 
-## Setup review
-|  |  |
+## Setup overview
+|||
 |--|--|
 | OS | Manjaro |
 | Desktop Environment | XFCE |
@@ -20,7 +20,7 @@
 
 ## Packages
 
-### Base
+### Base :computer:
 **Pacman:**
 chezmoi, kitty, zsh, p10k
 make, base-devel, yay, exa, neofetch, tig, github-cli, ncdu,
@@ -31,11 +31,11 @@ Telegram, Discord, qbitTorrent, VLC, Flameshot
 spotify, rust, spotify-adblock  
 **Snap:** code
 
-### Work Edition
+### Work Edition :briefcase:
 **Pacman:** dbeaver, sqlitebrowser, pgadmin, Opera  
 **AUR:** google-chrome, libpdfium-nojs
 
-### Home Edition
+### Home Edition :desktop_computer: 	
 **Pacman:** krita, jupyter-notebook, libreoffice-still
 
 
@@ -58,15 +58,27 @@ sudo fdisk -l
 Use [Rufus](http://rufus.ie/en/).
 
 ### 3. Boot in Manjaro Live CD.
-### 4. Install OS (read below before doing anything):
-- Don't forget to encrypt disk!  
+### 4. Install OS (Manjaro Welcome):
+- Locale is **ja** :jp: and keyboard is **English (US) Default** :us:
+- Encrypt a disk! :lock:  
 — *Why?*  
 — That's your main protection measure from data being stolen if someone has physical access to your PC.
-- Set no password for root!  
+- Make boot, swap, root and home partitions! :carpentry_saw:   
+Don't forget labels and that order of partitions is important. Also leave space for Windows if needed.  
+
+| Label | File System | Mount Point | Size | Flags |
+| -- | -- | -- | -- | -- |
+| Boot | fat32 | /boot/efi | 512 MiB | boot, esp |
+| Swap | linux-swap | | 4 GiB | swap |
+| Manjaro | ext4 | / | | |
+| Home | ext4 | /home | | |
+- Set no password for root! :unlock:  
 — *Why?*  
 — [That's why.](https://help.ubuntu.com/community/RootSudo#Advantages_and_Disadvantages)  
-- Set short password for user!  
+- Set a short password for user! :key:  
 — *Why?*  
-— If someone has access to your turned on PC you already fucked up and no strong password will ever help. But you will be typing long password for every sudo you need.  
+— If someone has access to your turned on PC you already fucked up and no strong password will ever help. But you will be typing a long password for every sudo you need.  
 — *Then what's the point of setting password at all?*  
 — Safety from your curious comrads.
+
+
