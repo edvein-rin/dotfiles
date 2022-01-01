@@ -42,7 +42,7 @@ spotify, rust, spotify-adblock
 ## OS Installing Guide
 
 ### 1. Download [Manjaro XFCE ISO](https://manjaro.org/downloads/official/xfce/).
-### 2. Burn the ISO on USB stick
+### 2. Burn the ISO on USB stick:
 
 **On Linux:**  
 ```shell
@@ -57,5 +57,16 @@ sudo fdisk -l
 **On Windows:**  
 Use [Rufus](http://rufus.ie/en/).
 
-### 3. Boot Manjaro Live CD and install.
-**IMPORTANT** Don't forget to encrypt disk. Set no password for root and short password for user.
+### 3. Boot Manjaro Live CD.
+### 4. Install OS (read below before doing anything):
+- Don't forget to encrypt disk!  
+— *Why?*  
+— That's your main protection measure from data being stolen if someone has physical access to your PC.
+- Set no password for root!  
+— *Why?*  
+— [That's why.](https://help.ubuntu.com/community/RootSudo#Advantages_and_Disadvantages)  
+- Set short password for user!  
+— *Why?*  
+— If someone has access to your turned on PC you already fucked up and no strong password will ever help. But you will be typing long password for every sudo you need.  
+— *Then what's the point of setting password at all?*  
+— Safety from your curious comrads.
