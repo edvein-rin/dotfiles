@@ -57,7 +57,7 @@ sudo fdisk -l
 **On Windows:**  
 Use [Rufus](http://rufus.ie/en/).
 
-### 3. Boot Manjaro Live CD.
+### 3. Boot in Manjaro Live CD.
 ### 4. Install OS (read below before doing anything):
 - Don't forget to encrypt disk!  
 — *Why?*  
