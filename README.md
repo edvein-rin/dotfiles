@@ -71,7 +71,7 @@ Don't forget labels and that order of partitions is important. Also leave space 
 | Boot | fat32 | /boot/efi | 512 MiB | boot, esp |
 | Swap | linux-swap | | 4 GiB | swap |
 | Manjaro | ext4 | / | | |
-| Home | ext4 | /home | | |
+| Home | ext4 | /home | ~30 GiB | |
 - Set no password for root! :unlock:  
 — *Why?*  
 — [That's why.](https://help.ubuntu.com/community/RootSudo#Advantages_and_Disadvantages)  
