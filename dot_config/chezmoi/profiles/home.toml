@@ -2,7 +2,7 @@
   username = "edvein-rin"
   email = "edvein-rin@gmail.com"
 
-[data.github]
+[data.gitconfig]
   name = {{ .username }}
   email = {{ .email }}
 

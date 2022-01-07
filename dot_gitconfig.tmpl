@@ -1,8 +1,6 @@
 [user]
-	name = edvein-rin
-	email = edveinrin@gmail.com
+	name = {{ .gitconfig.name }}
+	email = {{ .gitconfig.email }}
 [init]
 	defaultBranch = main
-[includeIf "gitdir:~/Code/tofu/"]
-  path = ~/.gitconfig-evo
 
