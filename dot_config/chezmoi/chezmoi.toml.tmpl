@@ -1,9 +1,21 @@
+{{- $profile := "" -}}
+{{- if (hasKey . "profile") -}}
+{{-   $profile = .profile -}}
+{{- else -}}
+{{-   $profile = promptString "profile" -}}
+{{- end -}}
+
 [git]
     autoCommit = true
     autoPush = true
 
 [data]
+    profile = {{ $profile | quote }}
     name = "Eduard Tsakhlo"
+
+    {{- if eq .profile "home" -}}
+    {{- else if  -}}
+    {{ end }}
 
 [data.home]
     username = "edvein-rin"
