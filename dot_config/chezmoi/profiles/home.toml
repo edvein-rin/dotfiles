@@ -1,0 +1,8 @@
+[data]
+  username = "edvein-rin"
+  email = "edvein-rin@gmail.com"
+
+[data.github]
+  name = {{ .username }}
+  email = {{ .email }}
+

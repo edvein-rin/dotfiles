@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <channel name="displays" version="1.0">
-  <property name="ActiveProfile" type="string" value="Default"/>
+  <property name="ActiveProfile" type="string" value="a3e6a71dd0f5579f7d96c4847b539e27ac4e00a9"/>
   <property name="Default" type="empty">
     <property name="eDP-1" type="string" value="Laptop">
       <property name="Active" type="bool" value="true"/>
@@ -22,7 +22,7 @@
     </property>
     <property name="HDMI-1" type="string" value="Dell Inc. 23&quot;">
       <property name="Active" type="bool" value="true"/>
-      <property name="EDID" type="string" value="0fa2fb011bd33cf87b05b3fc6d7781ea0a766848"/>
+      <property name="EDID" type="string" value="13935ddf58c0a598dd3b1d3b8b1ce6055ba8273c"/>
       <property name="Resolution" type="string" value="1920x1080"/>
       <property name="RefreshRate" type="double" value="60.000000"/>
       <property name="Rotation" type="int" value="0"/>
@@ -58,7 +58,7 @@
     </property>
     <property name="HDMI-1" type="string" value="Dell Inc. 23&quot;">
       <property name="Active" type="bool" value="true"/>
-      <property name="EDID" type="string" value="0fa2fb011bd33cf87b05b3fc6d7781ea0a766848"/>
+      <property name="EDID" type="string" value="13935ddf58c0a598dd3b1d3b8b1ce6055ba8273c"/>
       <property name="Resolution" type="string" value="1920x1080"/>
       <property name="RefreshRate" type="double" value="60.000000"/>
       <property name="Rotation" type="int" value="0"/>
@@ -149,12 +149,12 @@
   </property>
   <property name="Notify" type="bool" value="true"/>
   <property name="AutoEnableProfiles" type="bool" value="true"/>
-  <property name="de4cd894e7b284e6fa36006e2c733ba4079e23b6" type="string" value="Top 2">
+  <property name="a3e6a71dd0f5579f7d96c4847b539e27ac4e00a9" type="string" value="Leftt">
     <property name="eDP-1" type="string" value="Laptop">
       <property name="Active" type="bool" value="true"/>
-      <property name="EDID" type="string" value="1685241984579bf6cb766224b7cf829be5b89b04"/>
+      <property name="EDID" type="string" value="392077090627ea8a3fa4165cee683c28b8929e6b"/>
       <property name="Resolution" type="string" value="1920x1080"/>
-      <property name="RefreshRate" type="double" value="59.999683"/>
+      <property name="RefreshRate" type="double" value="59.996768"/>
       <property name="Rotation" type="int" value="0"/>
       <property name="Reflection" type="string" value="0"/>
       <property name="Primary" type="bool" value="true"/>
@@ -163,13 +163,13 @@
         <property name="Y" type="double" value="1.000000"/>
       </property>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="0"/>
-        <property name="Y" type="int" value="1080"/>
+        <property name="X" type="int" value="1920"/>
+        <property name="Y" type="int" value="0"/>
       </property>
     </property>
     <property name="HDMI-1" type="string" value="Dell Inc. 23&quot;">
       <property name="Active" type="bool" value="true"/>
-      <property name="EDID" type="string" value="0fa2fb011bd33cf87b05b3fc6d7781ea0a766848"/>
+      <property name="EDID" type="string" value="13935ddf58c0a598dd3b1d3b8b1ce6055ba8273c"/>
       <property name="Resolution" type="string" value="1920x1080"/>
       <property name="RefreshRate" type="double" value="60.000000"/>
       <property name="Rotation" type="int" value="0"/>

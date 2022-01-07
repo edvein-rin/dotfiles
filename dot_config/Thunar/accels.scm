@@ -45,6 +45,7 @@
 ; (gtk_accel_path "<Actions>/ThunarWindow/open-templates" "")
 ; (gtk_accel_path "<Actions>/ThunarLauncher/execute" "")
 ; (gtk_accel_path "<Actions>/ThunarWindow/close-window" "<Primary>q")
+; (gtk_accel_path "<Actions>/ThunarBookmarks/4a9035d5f17dd0e896b0e14cf6ab08d4" "")
 ; (gtk_accel_path "<Actions>/ThunarLauncher/cut" "<Primary>x")
 ; (gtk_accel_path "<Actions>/ThunarLauncher/sendto-desktop" "")
 ; (gtk_accel_path "<Actions>/ThunarWindow/zoom-in-alt2" "<Primary>equal")

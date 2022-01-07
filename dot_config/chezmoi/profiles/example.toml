@@ -1,0 +1,8 @@
+[data]
+    username = "username"
+    email = "username"
+
+[data.github]
+    name = {{ .username }}
+    email = {{ .email }}
+
