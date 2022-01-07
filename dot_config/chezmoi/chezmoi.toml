@@ -3,7 +3,7 @@
     autoPush = true
 
 [data]
-     
+    name = "Eduard Tsakhlo"
 
 [data.home]
     username = "edvein-rin"
@@ -14,5 +14,6 @@
     email = "e.tsakhlo@smartweb.com.ua"
 
 [data.github]
-    
+    name = ""
+    email = ""
 
