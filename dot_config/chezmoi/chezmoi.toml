@@ -2,6 +2,9 @@
     autoCommit = true
     autoPush = true
 
+[data]
+     
+
 [data.home]
     username = "edvein-rin"
     email = "edvein-rin@gmail.com"
@@ -9,4 +12,7 @@
 [data.work]
     username = "e.tsakhlo"
     email = "e.tsakhlo@smartweb.com.ua"
+
+[data.github]
+    
 
