@@ -13,13 +13,15 @@
     profile = {{ $profile | quote }}
     name = "Eduard Tsakhlo"
 
-[data.home]
+    {{ if (eq .profile "home") }}
     username = "edvein-rin"
     email = "edvein-rin@gmail.com"
+    {{ end }}
 
-[data.work]
+    {{ if (eq .profile "work") }}
     username = "e.tsakhlo"
     email = "e.tsakhlo@smartweb.com.ua"
+    {{ end }}
 
 [data.github]
     name = ""
