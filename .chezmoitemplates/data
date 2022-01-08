@@ -1,0 +1,5 @@
+{{- $data := first . -}}
+{{- $field := first (rest .) -}}
+{{- $value := first (rest (rest .)) -}}
+{{- $_ := set $data $field $value -}}
+{{ $field }} = {{ $value | quote }}

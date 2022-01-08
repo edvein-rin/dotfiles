@@ -1,8 +1,8 @@
-{{- $profile := "" -}}
-{{- if (hasKey . "profile") -}}
-{{-   $profile = .profile -}}
-{{- else -}}
-{{-   $profile = promptString "profile" -}}
+{{- $profile := promptString "profile" -}}
+{{- if not $profile -}}
+    {{- if (hasKey . "profile") -}}
+        {{-   $profile = .profile -}}
+    {{- end -}}
 {{- end -}}
 
 # --- SHARED DATA ---
@@ -11,10 +11,12 @@
     autoPush = true
 
 [data]
-    name = {{ (set . "name" "Eduard Tsakhlo").name }}
+    {{ template "data" (list . "name" "Eduard Tsakhlo") }}
 
 # --- "{{ $profile }}" PROFILE SPECIFIC DATA ---
 [data]
-    profile = {{ (set . "profile" $profile).profile }}
+    {{ template "data" (list . "profile" $profile) }}
 
-{{ template "profile.toml.tmpl" . -}}
+{{ template "profile" . -}}
+
+# Maybe use two inits: first for initing vars and second for generating other configs based on this vars
