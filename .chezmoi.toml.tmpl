@@ -1,0 +1,20 @@
+{{- $profile := "" -}}
+{{- if (hasKey . "profile") -}}
+{{-   $profile = .profile -}}
+{{- else -}}
+{{-   $profile = promptString "profile" -}}
+{{- end -}}
+
+# --- SHARED DATA ---
+[git]
+    autoCommit = true
+    autoPush = true
+
+[data]
+    name = {{ (set . "name" "Eduard Tsakhlo").name }}
+
+# --- "{{ $profile }}" PROFILE SPECIFIC DATA ---
+[data]
+    profile = {{ (set . "profile" $profile).profile }}
+
+{{ template "profile.toml.tmpl" . -}}
