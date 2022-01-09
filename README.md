@@ -2,6 +2,10 @@
 
 Powered by [chezmoi](https://github.com/twpayne/chezmoi).
 
+### Installation
+
+Run `sh ./install.sh` and follow its instructions.
+
 ### Data
 ```go
 [data.flags]
