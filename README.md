@@ -7,6 +7,7 @@ Powered by [chezmoi](https://github.com/twpayne/chezmoi).
 [data.flags]
   isForWork
   isPersonal
+
 [data]
   name
   username
