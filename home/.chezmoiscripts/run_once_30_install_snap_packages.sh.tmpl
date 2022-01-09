@@ -1,0 +1,16 @@
+#!/bin/sh
+
+readonly packages=(
+    code --classic
+)
+
+
+if [ ! "$(command -v snap)" ]; then
+    sh "yay -S snap"
+    sh "sudo systemctl enable --now snapd.socket"
+    sh "sudo ln -s /var/lib/snapd/snap /snap"
+fi
+
+for package in "${packages[@]}"; do
+    sudo snap install "${package}"
+done
