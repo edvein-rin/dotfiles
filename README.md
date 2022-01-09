@@ -16,4 +16,9 @@ Powered by [chezmoi](https://github.com/twpayne/chezmoi).
 [data.gitconfig]
   name
   email
+ 
+[data.packages]
+  arch
+  aur
+  snap
 ```
