@@ -1,15 +1,15 @@
-{{- $isForWork := promptBool "Is computer used for work?" false -}}
-{{- if (hasKey . "isForWork") -}}
-    {{- $isForWork = .isForWork -}}
+{{- $is_for_work := promptBool "Is computer for work?" false -}}
+{{- if (hasKey . "is_for_work") -}}
+    {{- $is_for_work = .is_for_work -}}
 {{- end -}}
 
 [data.flags]
-    isForWork = {{ $isForWork }}
-    isPersonal = {{ not $isForWork }}
+    is_for_work = {{ $is_for_work }}
+    is_personal = {{ not $is_for_work }}
 
 {{ $name := "Eduard Tsakhlo" -}}
-{{- $username := $isForWork | ternary "e.tsakhlo" "edvein-rin" -}}
-{{- $email := $isForWork | ternary "e.tsakhlo@smartweb.com.ua" "edveinrin@gmail.com" -}}
+{{- $username := $is_for_work | ternary "e.tsakhlo" "edvein-rin" -}}
+{{- $email := $is_for_work | ternary "e.tsakhlo@smartweb.com.ua" "edveinrin@gmail.com" -}}
 
 [data]
     name = {{ $name | quote }}
@@ -17,7 +17,7 @@
     email = {{ $email | quote }}
 
 [data.gitconfig]
-    name = {{ $isForWork | ternary $name $username | quote }}
+    name = {{ $is_for_work | ternary $name $username | quote }}
     email = {{ $email | quote }}
 
 [git]
