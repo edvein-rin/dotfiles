@@ -1,38 +1,6 @@
 #!/bin/sh
 
-readonly packages=(
-    base-devel
-    chezmoi
-    lastpass-cli
-    kitty
-    zsh
-    yay
-    exa
-    neofetch
-    tig
-    github-cli
-    ncdu
-    ttf-jetbrains-mono
-    vim
-    neovim
-    npm
-    docker
-    docker-compose
-    telegram-desktop
-    discord-canary
-    qbittorrent
-    flameshot
-    {{ if .flags.is_for_work -}}
-    opera
-    pgadmin4
-    {{- end }}
-    {{ if .flags.is_personal -}}
-    vlc
-    krita
-    jupyter-notebook
-    libreoffice-still
-    {{- end }}
-)
+readonly packages=$(echo {{ .packages.arch | quote }} | tr '\\n' ' ')
 
 sudo pacman -Syy --noconfirm
 sudo pacman -Syu --noconfirm

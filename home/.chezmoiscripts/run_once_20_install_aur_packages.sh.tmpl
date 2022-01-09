@@ -1,22 +1,6 @@
 #!/bin/sh
 
-readonly packages=(
-    megasync
-    rofi-power-menu
-    skypeforlinux-stable-bin
-    slack-desktop
-    spotify
-    spotify-adblock 
-    libpdfium-nojs
-    {{ if .flags.is_for_work -}}
-    google-chrome
-    {{- end }}
-    {{ if .flags.is_personal -}}
-    pureref
-    anki
-    {{- end }}
-)
-
+readonly packages=$(echo {{ .packages.aur | quote }} | tr '\\n' ' ')
 
 yay -Syy --noconfirm
 yay -Syu --noconfirm

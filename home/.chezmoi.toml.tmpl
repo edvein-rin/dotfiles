@@ -20,6 +20,60 @@
     name = {{ $is_for_work | ternary $name $username | quote }}
     email = {{ $email | quote }}
 
+[data.packages]
+    arch = """
+        base-devel
+        chezmoi
+        lastpass-cli
+        kitty
+        zsh
+        yay
+        exa
+        neofetch
+        tig
+        github-cli
+        ncdu
+        ttf-jetbrains-mono
+        vim
+        neovim
+        npm
+        docker
+        docker-compose
+        telegram-desktop
+        discord-canary
+        qbittorrent
+        flameshot
+        {{ if .flags.is_for_work -}}
+        opera
+        pgadmin4
+        {{- end }}
+        {{ if .flags.is_personal -}}
+        vlc
+        krita
+        jupyter-notebook
+        libreoffice-still
+        {{- end }}
+    """
+    aur = """
+        megasync
+        rofi-power-menu
+        skypeforlinux-stable-bin
+        slack-desktop
+        spotify
+        spotify-adblock 
+        libpdfium-nojs
+        {{ if .flags.is_for_work -}}
+        google-chrome
+        {{- end }}
+        {{ if .flags.is_personal -}}
+        pureref
+        anki
+        {{- end }}
+    """
+    snap = """
+        code --classic
+    """
+
 [git]
     autoCommit = true
     autoPush = true

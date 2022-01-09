@@ -1,9 +1,6 @@
 #!/bin/sh
 
-readonly packages=(
-    code --classic
-)
-
+readonly packages=$(echo {{ .packages.snap | quote }} | tr '\\n' ' ')
 
 if [ ! "$(command -v snap)" ]; then
     sh "yay -S snap"
