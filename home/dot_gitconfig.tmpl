@@ -1,6 +1,6 @@
 [user]
-	name = {{ .gitconfig.name }}
-	email = {{ .gitconfig.email }}
+	name = {{ .gitconfig.name | quote }}
+	email = {{ .gitconfig.email | quote }}
 
 [init]
 	defaultBranch = main
