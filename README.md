@@ -5,8 +5,8 @@ Powered by [chezmoi](https://github.com/twpayne/chezmoi).
 ### Data
 ```go
 [data.flags]
-  isForWork
-  isPersonal
+  is_for_work
+  is_personal
 
 [data]
   name
