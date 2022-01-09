@@ -5,6 +5,7 @@
 
 [data.flags]
     isForWork = {{ $isForWork }}
+    isPersonal = {{ not $isForWork }}
 
 {{ $name := "Eduard Tsakhlo" -}}
 {{- $username := $isForWork | ternary "e.tsakhlo" "edvein-rin" -}}
