@@ -6,6 +6,9 @@ Powered by [chezmoi](https://github.com/twpayne/chezmoi).
 
 Run `sh ./install.sh` and follow its instructions.
 
+### TODO
+1. Logging of what's happening.
+
 ### Data
 ```go
 [data.flags]
