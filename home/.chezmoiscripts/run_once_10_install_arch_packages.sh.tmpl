@@ -34,5 +34,6 @@ readonly packages=(
     {{- end }}
 )
 
-sudo pacman -Syy --noconfirm & sudo pacman -Syu --noconfirm
+sudo pacman -Syy --noconfirm
+sudo pacman -Syu --noconfirm
 sudo pacman -S "${packages[@]}" --noconfirm
