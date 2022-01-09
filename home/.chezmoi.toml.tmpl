@@ -1,0 +1,24 @@
+{{- $isForWork := promptBool "Is computer used for work?" false -}}
+{{- if (hasKey . "isForWork") -}}
+    {{- $isForWork = .isForWork -}}
+{{- end -}}
+
+[data.flags]
+    isForWork = {{ $isForWork }}
+
+{{ $name := "Eduard Tsakhlo" -}}
+{{- $username := $isForWork | ternary "e.tsakhlo" "edvein-rin" -}}
+{{- $email := $isForWork | ternary "e.tsakhlo@smartweb.com.ua" "edveinrin@gmail.com" -}}
+
+[data]
+    name = {{ $name | quote }}
+    username = {{ $username | quote }}
+    email = {{ $email | quote }}
+
+[data.gitconfig]
+    name = {{ $isForWork | ternary $name $username | quote }}
+    email = {{ $email | quote }}
+
+[git]
+    autoCommit = true
+    autoPush = true
