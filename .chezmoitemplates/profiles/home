@@ -1,6 +1,0 @@
-{{ template "data" (list . "username" "edvein-rin") }}
-{{ template "data" (list . "email" "edvein-rin@gmail.com") }}
-
-[data.gitconfig]
-    name = {{ .username }}
-    email = {{ .email }}

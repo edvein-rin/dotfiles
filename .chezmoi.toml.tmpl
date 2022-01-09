@@ -1,22 +1,27 @@
+{{- $isReInit := hasKey . "profile" -}}
+{{ $isReInit := true }}
+
 {{- $profile := promptString "profile" -}}
-{{- if not $profile -}}
+{{- if eq $profile "profile" -}}
     {{- if (hasKey . "profile") -}}
-        {{-   $profile = .profile -}}
+        {{- $profile = .profile -}}
     {{- end -}}
 {{- end -}}
+{{- $_ := (set . "profile" $profile) -}}
 
-# --- SHARED DATA ---
 [git]
     autoCommit = true
     autoPush = true
 
 [data]
-    {{ template "data" (list . "name" "Eduard Tsakhlo") }}
+    profile = {{ $profile | quote }}
+    # shared data
+    name = "Eduard Tsakhlo"
+    # {{$profile}} profile data
+    {{ template "profile-data" . }}
 
-# --- "{{ $profile }}" PROFILE SPECIFIC DATA ---
-[data]
-    {{ template "data" (list . "profile" $profile) }}
-
-{{ template "profile" . -}}
+{{ if $isReInit -}}
+    {{- template "profile-template" . -}}
+{{- end }}
 
 # Maybe use two inits: first for initing vars and second for generating other configs based on this vars

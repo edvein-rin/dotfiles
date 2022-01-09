@@ -1,5 +1,0 @@
-{{- if (eq .profile "home") -}}
-{{- template "profiles/home" . -}}
-{{- else if (eq .profile "work") -}}
-{{- template "profiles/work" . -}}
-{{- end -}}

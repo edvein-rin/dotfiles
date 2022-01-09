@@ -1,0 +1,5 @@
+{{- if (eq .profile "home") -}}
+{{- include "profiles/home.toml.data" -}}
+{{- else if (eq .profile "work") -}}
+{{- include "profiles/work.toml.data" -}}
+{{- end -}}
