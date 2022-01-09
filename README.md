@@ -57,3 +57,17 @@ Powered by [chezmoi](https://github.com/twpayne/chezmoi).
 ├── .ssh  
 └── .vpn  
 ```
+
+### Packages
+
+Stored at [`[data.packages]`](https://github.com/edvein-rin/dotfiles/blob/main/home/.chezmoi.toml.tmpl#L23) table at `.chezmoi.toml.templ`:
+```go
+[data.packages]
+  arch = """
+    base-devel
+    chezmoi
+    lastpass-cli
+    ...
+  """
+  ...
+```
