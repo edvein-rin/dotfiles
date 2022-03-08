@@ -85,7 +85,7 @@ Stored at [`[data.packages]`](https://github.com/edvein-rin/dotfiles/blob/main/h
   arch = """
     base-devel
     chezmoi
-    lastpass-cli
+    bitwarden-cli
     ...
   """
   ...
