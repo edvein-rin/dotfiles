@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <channel name="displays" version="1.0">
-  <property name="ActiveProfile" type="string" value="a3e6a71dd0f5579f7d96c4847b539e27ac4e00a9"/>
+  <property name="ActiveProfile" type="string" value="Default"/>
   <property name="Default" type="empty">
     <property name="eDP-1" type="string" value="Laptop">
       <property name="Active" type="bool" value="true"/>
@@ -16,7 +16,7 @@
         <property name="Y" type="double" value="1.000000"/>
       </property>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="1920"/>
+        <property name="X" type="int" value="0"/>
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
@@ -52,7 +52,7 @@
         <property name="Y" type="double" value="1.000000"/>
       </property>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="1920"/>
+        <property name="X" type="int" value="0"/>
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
