@@ -1,6 +1,6 @@
 #!/bin/sh
 
-readonly packages=$(echo {{ .packages.snap | quote }} | tr '\\n' ' ')
+readonly packages=$(echo {{ .packages.snap | quote }} | sed 's/\\n//g')
 
 if [ ! "$(command -v snap)" ]; then
     sh "yay -S snap"
@@ -8,6 +8,6 @@ if [ ! "$(command -v snap)" ]; then
     sh "sudo ln -s /var/lib/snapd/snap /snap"
 fi
 
-for package in "${packages[@]}"; do
+for package in "${packages[*]}"; do
     sudo snap install "${package}"
 done
