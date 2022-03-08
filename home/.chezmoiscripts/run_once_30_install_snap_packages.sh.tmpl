@@ -9,5 +9,5 @@ if [ ! "$(command -v snap)" ]; then
 fi
 
 for package in "${packages[*]}"; do
-    sudo snap install "${package}"
+    sudo snap install ${package}
 done
