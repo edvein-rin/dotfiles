@@ -19,6 +19,16 @@ Run `sh ./install.sh` and follow its instructions.
 
 [data]
   name
+  trash_nickname
+  trash_email
+
+  personal_nickname
+  personal_username
+  personal_email
+
+  business_nickname
+  business_username
+  business_email
   username
   email
 
