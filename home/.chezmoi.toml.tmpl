@@ -42,10 +42,6 @@
     username = {{ $username | quote }}
     email = {{ $email | quote }}
 
-[data.gitconfig]
-    name = {{ $is_for_work | ternary $name $username | quote }}
-    email = {{ $email | quote }}
-
 [data.packages]
     arch = """
         base-devel
