@@ -17,10 +17,11 @@ antigen theme romkatv/powerlevel10k
 
 antigen bundle git
 antigen bundle npm
-# h | hs | hsi - history with grep
 antigen bundle docker
 antigen bundle vi-mode
+# h | hs | hsi - history with grep
 antigen bundle history
+# upgrade | [pac|ya]in | [pac|ya]mir | [pac|ya]upg - pacman and yay aliases
 antigen bundle archlinux
 antigen bundle colored-man-pages
 # z - cd with memory
