@@ -3,9 +3,9 @@
 readonly packages=$(echo {{ .packages.snap | quote }} | sed 's/\\n//g')
 
 if [ ! "$(command -v snap)" ]; then
-    sh "yay -S snap"
-    sh "sudo systemctl enable --now snapd.socket"
-    sh "sudo ln -s /var/lib/snapd/snap /snap"
+    yay -S snap
+    sudo systemctl enable --now snapd.socket
+    sudo ln -s /var/lib/snapd/snap /snap
 fi
 
 for package in "${packages[*]}"; do
