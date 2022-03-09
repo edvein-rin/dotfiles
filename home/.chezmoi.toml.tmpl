@@ -7,7 +7,7 @@
     is_for_work = {{ $is_for_work }}
     is_personal = {{ not $is_for_work }}
 
-{{- $trash_nickname := "Edrick Edorty" -}}
+{{ $trash_nickname := "Edrick Edorty" -}}
 {{- $trash_email:= "edik24032002@gmail.com" -}}
 
 {{- $personal_nickname := "Edvein Rin" -}}
@@ -18,7 +18,7 @@
 {{- $business_username := "e.tsakhlo" -}}
 {{- $business_email := "e.tsakhlo@smartweb.com.ua" -}}
 
-{{ $name := "Eduard Tsakhlo" -}}
+{{- $name := "Eduard Tsakhlo" -}}
 {{- $nickname := $is_for_work | ternary $business_nickname $personal_nickname -}}
 {{- $username := $is_for_work | ternary $business_username $personal_username -}}
 {{- $email := $is_for_work | ternary $business_email $personal_email -}}
@@ -65,6 +65,7 @@
         flameshot
         thefuck
         zoxide
+        git-delta
         {{ if .flags.is_for_work -}}
         opera
         pgadmin4
