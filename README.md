@@ -9,6 +9,7 @@ Run `sh ./install.sh` and follow its instructions.
 ### TODO
 1. Logging of what's happening.
 2. Configure Delta.
+3. Remove simple adblock from drun.
 
 ### Data
 ```js
