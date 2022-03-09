@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Create docker group to run docker without sudo
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker 
+
+# Start docker services on startup
+sudo systemctl enable docker.service
+sudo systemctl enable containerd.service

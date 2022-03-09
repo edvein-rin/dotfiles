@@ -7,9 +7,8 @@ Powered by [chezmoi](https://github.com/twpayne/chezmoi).
 Run `sh ./install.sh` and follow its instructions.
 
 ### TODO
-1. `sudoers NOPASSWD` (pacman, docker).
-2. Git aliases
-3. Logging of what's happening.
+1. Logging of what's happening.
+2. Configure Delta.
 
 ### Data
 ```js
