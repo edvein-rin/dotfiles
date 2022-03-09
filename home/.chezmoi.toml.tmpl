@@ -2,10 +2,11 @@
 {{- if (hasKey . "is_for_work") -}}
     {{- $is_for_work = .is_for_work -}}
 {{- end -}}
+{{- $is_personal := not $is_for_work -}}
 
 [data.flags]
     is_for_work = {{ $is_for_work }}
-    is_personal = {{ not $is_for_work }}
+    is_personal = {{ $is_personal }}
 
 {{ $trash_nickname := "Edrick Edorty" -}}
 {{- $trash_email:= "edik24032002@gmail.com" -}}
