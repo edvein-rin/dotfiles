@@ -5,37 +5,53 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Antigen setup
+# ANTIGEN SETUP
 if [[ ! -a $HOME/.antigen.zsh ]]; then
   sh "curl -L git.io/antigen > $HOME/.antigen.zsh"
 fi
 source $HOME/.antigen.zsh
 
-# Antigen config
+# ANTIGEN CONFIG
 antigen use oh-my-zsh
+antigen theme romkatv/powerlevel10k
 
 antigen bundle git
 antigen bundle npm
-antigen bundle composer
-antigen bundle sudo
+# h | hs | hsi - history with grep
+antigen bundle history
 antigen bundle docker
 antigen bundle vi-mode
+# z - cd with memory
+antigen bundle zoxide
+antigen bundle colored-man-pages
+# fuck | ESC + ESC - correct last command
+antigen bundle thefuck
 antigen bundle zsh-users/zsh-autosuggestions
-
-antigen theme romkatv/powerlevel10k
 
 antigen apply
 
-# Aliases
+# ALIASES
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
+
+alias ls="exa"
+alias l='ls -lbF' # --long --binary --clasify
+alias la='ls -la' # --long --all
+alias ll='ls -lbhHigUmuSa' # everything
+
+alias cd="z"
+
 alias spotify="LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify > /dev/null 2>&1 &;disown"
 alias izi="sh ~/cloud/EVO/izi.sh &;disown"
 
-# Functions
+# FUNCTIONS
+function tree () exa --tree --level ${1:-1}
 function launch {
   nohup $1 >/dev/null 2>/dev/null & disown; exit
 }
 
-# Powerlevel10k setup
+# PLUGINS SETUP
+# thefuck fuck alias
+eval $(thefuck --alias)
+# powerlevel10k source
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
