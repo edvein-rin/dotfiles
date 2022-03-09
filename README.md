@@ -11,6 +11,7 @@ Run `sh ./install.sh` and follow its instructions.
 2. Configure Delta.
 3. Remove simple adblock from drun.
 4. Customize vim for simple file edit and nvim for more complex.
+5. Fix not ability to type H, J, K, L in terminal.
 
 ### Data
 ```js
