@@ -18,7 +18,6 @@ antigen theme romkatv/powerlevel10k
 antigen bundle git
 antigen bundle npm
 antigen bundle docker
-antigen bundle vi-mode
 # h | hs | hsi - history with grep
 antigen bundle history
 # upgrade | [pac|ya]in | [pac|ya]mir | [pac|ya]upg - pacman and yay aliases
@@ -28,6 +27,7 @@ antigen bundle colored-man-pages
 antigen bundle zoxide
 # fuck | ESC + ESC - correct last command
 antigen bundle thefuck
+antigen bundle jeffreytse/zsh-vi-mode
 antigen bundle zsh-users/zsh-autosuggestions
 
 antigen apply
@@ -57,3 +57,7 @@ function launch {
 eval $(thefuck --alias)
 # powerlevel10k source
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# EXPORTS
+EDITOR="nvim"
+ZVM_VI_EDITOR="nvim"
