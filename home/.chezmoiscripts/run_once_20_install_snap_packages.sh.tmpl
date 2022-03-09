@@ -3,7 +3,7 @@
 readonly packages=$(echo {{ .packages.snap | quote }} | sed 's/\\n//g')
 
 if [ ! "$(command -v snap)" ]; then
-    yay -S snap
+    yay -S snap --noconfirm --needed --verbose
     sudo systemctl enable --now snapd.socket
     sudo ln -s /var/lib/snapd/snap /snap
 fi
