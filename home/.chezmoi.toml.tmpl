@@ -7,8 +7,6 @@
     is_for_work = {{ $is_for_work }}
     is_personal = {{ not $is_for_work }}
 
-{{ $name := "Eduard Tsakhlo" -}}
-
 {{- $trash_nickname := "Edrick Edorty" -}}
 {{- $trash_email:= "edik24032002@gmail.com" -}}
 
@@ -20,13 +18,12 @@
 {{- $business_username := "e.tsakhlo" -}}
 {{- $business_email := "e.tsakhlo@smartweb.com.ua" -}}
 
+{{ $name := "Eduard Tsakhlo" -}}
 {{- $nickname := $is_for_work | ternary $business_nickname $personal_nickname -}}
 {{- $username := $is_for_work | ternary $business_username $personal_username -}}
 {{- $email := $is_for_work | ternary $business_email $personal_email -}}
 
 [data]
-    name = {{ $name | quote }}
-
     trash_nickname = {{ $trash_nickname | quote }}
     trash_email = {{ $trash_email | quote }}
 
@@ -38,6 +35,7 @@
     business_username = {{ $business_username | quote }}
     business_email = {{ $business_email | quote }}
 
+    name = {{ $name | quote }}
     nickname = {{ $nickname | quote }}
     username = {{ $username | quote }}
     email = {{ $email | quote }}

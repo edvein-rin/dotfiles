@@ -12,13 +12,12 @@ Run `sh ./install.sh` and follow its instructions.
 3. Logging of what's happening.
 
 ### Data
-```go
+```js
 [data.flags]
   is_for_work
-  is_personal
+  is_personal = !is_for_work
 
 [data]
-  name
   trash_nickname
   trash_email
 
@@ -29,8 +28,11 @@ Run `sh ./install.sh` and follow its instructions.
   business_nickname
   business_username
   business_email
-  username
-  email
+
+  name
+  nickname = is_for_work ? business_nickname | personal_nickname
+  username = is_for_work ? business_username | personal_username
+  email = is_for_work ? business_email | personal_email
 
 [data.gitconfig]
   name
@@ -68,6 +70,7 @@ Run `sh ./install.sh` and follow its instructions.
 ├── neofetch  
 ├── nvim  
 ├── pamac  
+├── Thunar  
 └── xfce4  
 
 ~/cloud/  
