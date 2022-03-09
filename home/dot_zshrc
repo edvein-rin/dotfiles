@@ -18,12 +18,13 @@ antigen theme romkatv/powerlevel10k
 antigen bundle git
 antigen bundle npm
 # h | hs | hsi - history with grep
-antigen bundle history
 antigen bundle docker
 antigen bundle vi-mode
+antigen bundle history
+antigen bundle archlinux
+antigen bundle colored-man-pages
 # z - cd with memory
 antigen bundle zoxide
-antigen bundle colored-man-pages
 # fuck | ESC + ESC - correct last command
 antigen bundle thefuck
 antigen bundle zsh-users/zsh-autosuggestions
