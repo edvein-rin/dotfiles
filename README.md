@@ -29,9 +29,9 @@ Run `sh ./install.sh` and follow its instructions.
   business_email
 
   name
-  nickname = is_for_work ? business_nickname | personal_nickname
-  username = is_for_work ? business_username | personal_username
-  email = is_for_work ? business_email | personal_email
+  nickname = is_for_work ? business_nickname : personal_nickname
+  username = is_for_work ? business_username : personal_username
+  email = is_for_work ? business_email : personal_email
 
 [data.gitconfig]
   name
