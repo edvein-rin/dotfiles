@@ -11,7 +11,6 @@ Run `sh ./install.sh` and follow its instructions.
 2. Configure Delta.
 3. Remove simple Spotify from drun.
 4. Customize vim for simple file edit and nvim (SpaceVim) for more complex.
-5. Fix not ability to type H, J, K, L in terminal.
 
 ### Data
 ```js
