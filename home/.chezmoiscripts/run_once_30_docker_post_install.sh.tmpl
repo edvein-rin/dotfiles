@@ -1,9 +1,12 @@
 #!/bin/sh
 
-# Create docker group to run docker without sudo
-sudo groupadd docker
-sudo usermod -aG docker $USER
-newgrp docker 
+# If no docker group
+if [ -z "$(getent group docker)" ]; then
+    # Create docker group to run docker without sudo
+    sudo groupadd docker
+    sudo usermod -aG docker $USER
+    newgrp docker 
+fi
 
 # Start docker services on startup
 sudo systemctl enable docker.service
