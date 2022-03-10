@@ -76,7 +76,6 @@ work/**
 .config/viewnior
 .config/vlc
 .config/volumeicon
-.config/xfce4/xfce4-taskmanager.rc
 .config/xfce4/xfconf/xfce-perchannel-xml/catfish.xml
 .config/yarn
 .config/yay
