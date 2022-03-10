@@ -26,7 +26,6 @@ work/**
 .config/GIMP
 .config/Mathpix
 .config/Mousepad
-.config/PureRef.ini
 .config/QOpenVPN
 .config/QtProject.conf
 .config/Slack
