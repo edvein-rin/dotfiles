@@ -33,7 +33,6 @@ work/**
 .config/audacious
 .config/calligrarc
 .config/calligrasheetsrc
-.config/catfish
 .config/chezmoi
 .config/code-oss
 .config/dconf
@@ -51,7 +50,6 @@ work/**
 .config/kritadisplayrc
 .config/kritarc
 .config/libreoffice
-.config/lpass
 .config/manjaro
 .config/matplotlib
 .config/mimeapps.list
