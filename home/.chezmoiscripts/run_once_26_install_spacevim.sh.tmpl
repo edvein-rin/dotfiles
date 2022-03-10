@@ -1,3 +1,5 @@
 #!/bin/sh
 
-curl -sLf https://spacevim.org/install.sh | bash
+if [[ ! -a $HOME/.config/nvim/init.vim ]]; then
+    curl -sLf https://spacevim.org/install.sh | bash -s -- --install neovim
+fi
