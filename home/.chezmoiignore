@@ -29,7 +29,6 @@ work/**
 .config/QOpenVPN
 .config/QtProject.conf
 .config/Slack
-.config/Thunar/renamerrc
 .config/Unknown Organization
 .config/audacious
 .config/autostart/kdocker.desktop
