@@ -12,12 +12,13 @@ Run `sh ./install.sh` and follow its instructions.
 3. Configure git pager Delta.
 4. Autostart apps based on `.data.is_for_work`.
 5. Customize separate from nvim vim config for simple file edit.
-6. Logging of what's happening.
-7. Remove part of `config/xfce4/xfconf/xfce-perchannel-xml/displays.xml` from chezmoi.
+6. Colorize logging of what's happening.
+7. Remove a part of `config/xfce5/xfconf/xfce-perchannel-xml/displays.xml` from chezmoi that always updates. Same with Thunar.
 
 ### Data
 ```js
 [data.flags]
+  is_dev
   is_for_work
   is_personal = !is_for_work
 
@@ -58,13 +59,12 @@ Run `sh ./install.sh` and follow its instructions.
 ├── .vpn -> ~/cloud/.vpn  
 ├── code  
 ├── cloud  
-├── documents  
+├── documents -> ~/cloud/documents  
 ├── downloads  
-├── pictures  
+├── pictures -> ~/cloud/pictures  
+│   └── .config  
 ├── scripts  
-│   ├── git  
-│   └── os-setup  
-├── univ  
+├── university -> ~/cloud/university  
 └── work  
 
 ~/.config/  
@@ -78,10 +78,11 @@ Run `sh ./install.sh` and follow its instructions.
 └── xfce4  
 
 ~/cloud/  
-├── .config  
-│   └── surfing-keys  
+├── .vpn  
 ├── .ssh  
-└── .vpn  
+├── documents  
+├── pictures  
+└── university  
 ```
 
 ### Packages
