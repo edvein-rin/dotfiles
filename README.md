@@ -7,10 +7,12 @@ Powered by [chezmoi](https://github.com/twpayne/chezmoi).
 Run `sh ./install.sh` and follow its instructions.
 
 ### TODO
-1. Logging of what's happening.
-2. Configure Delta.
-3. Remove simple Spotify from drun.
-4. Customize vim for simple file edit and nvim (SpaceVim) for more complex.
+1. Automate Firefox STG sync on each startup.
+2. Remove simple Spotify from drun.
+3. Configure git pager Delta.
+4. Autostart apps based on `.data.is_for_work`.
+5. Customize separate from nvim vim config for simple file edit.
+6. Logging of what's happening.
 
 ### Data
 ```js
