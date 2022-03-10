@@ -62,26 +62,16 @@ Run `sh ./install.sh` and follow its instructions.
 ├── documents -> ~/cloud/documents  
 ├── downloads  
 ├── pictures -> ~/cloud/pictures  
-│   └── .config  
 ├── scripts  
 ├── university -> ~/cloud/university  
 └── work  
-
-~/.config/  
-├── autostart  
-├── flameshot  
-├── kitty  
-├── neofetch  
-├── nvim  
-├── pamac  
-├── Thunar  
-└── xfce4  
 
 ~/cloud/  
 ├── .vpn  
 ├── .ssh  
 ├── documents  
 ├── pictures  
+│   └── .config  
 └── university  
 ```
 
