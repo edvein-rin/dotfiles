@@ -31,8 +31,6 @@ work/**
 .config/Slack
 .config/Unknown Organization
 .config/audacious
-.config/autostart/kdocker.desktop
-.config/autostart/mathpix-snipping-tool.desktop
 .config/calligrarc
 .config/calligrasheetsrc
 .config/catfish
