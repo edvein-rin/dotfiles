@@ -77,7 +77,6 @@ work/**
 .config/vlc
 .config/volumeicon
 .config/yarn
-.config/yay
 .config/zoomus.conf
 
 .dir_colors
