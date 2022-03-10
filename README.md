@@ -13,6 +13,7 @@ Run `sh ./install.sh` and follow its instructions.
 4. Autostart apps based on `.data.is_for_work`.
 5. Customize separate from nvim vim config for simple file edit.
 6. Logging of what's happening.
+7. Remove part of `config/xfce4/xfconf/xfce-perchannel-xml/displays.xml` from chezmoi.
 
 ### Data
 ```js
