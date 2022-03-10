@@ -1,13 +1,12 @@
 #!/bin/sh
 
-# If no docker group
 if [ -z "$(getent group docker)" ]; then
-    # Create docker group to run docker without sudo
+    echo "INFO No docker group found. Creating new one to run docker without sudo..."
     sudo groupadd docker
     sudo usermod -aG docker $USER
     newgrp docker 
 fi
 
-# Start docker services on startup
+echo "INFO Enabling docker services on startup"
 sudo systemctl enable docker.service
 sudo systemctl enable containerd.service

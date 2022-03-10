@@ -1,7 +1,12 @@
 #!/bin/sh
 
-readonly packages=$(echo {{ .packages.arch | quote }} | sed 's/\\n//g')
+{{ if not .flags.is_dev -}}
+    readonly packages=$(echo {{ .packages.arch | quote }} | sed 's/\\n//g')
 
-sudo pacman -Syy --noconfirm
-sudo pacman -Syu --noconfirm
-sudo pacman -S ${packages[*]} --noconfirm --needed --verbose
+    echo "INFO Installing pacman packages"
+    sudo pacman -Syy --noconfirm
+    sudo pacman -Syu --noconfirm
+    sudo pacman -S ${packages[*]} --noconfirm --needed --verbose
+{{- else -}}
+    echo "INFO DEV MODE Skipping installing arch packages"
+{{- end -}}

@@ -4,7 +4,10 @@
 {{- end -}}
 {{- $is_personal := not $is_for_work -}}
 
+{{- $is_dev := promptBool "Is development mode" false -}}
+
 [data.flags]
+    is_dev = {{ $is_dev }}
     is_for_work = {{ $is_for_work }}
     is_personal = {{ $is_personal }}
 
@@ -98,6 +101,9 @@
     snap = """
         code --classic
     """
+
+[data.neofetch]
+    image_source = "~/pictures/.config/neofetch.png"
 
 [git]
     autoCommit = true
