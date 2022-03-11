@@ -1,0 +1,20 @@
+#!/bin/bash
+
+latest_stg_file_path=$(find ~/downloads/STG -printf '%T+ %p\n' | sort -r | head -2 | tail -1 | cut -f2 -d " ")
+
+if [ -a ~/code/.stg/stg.json ]; then
+    cd ~/code/.stg
+else
+    {
+        cd ~/code/.stg
+    } || {
+        mkdir ~/code/.stg
+        cd ~/code/.stg
+    }
+    git clone {{ (bitwarden "item" "STG" ).notes }} . || exit 1
+fi
+
+cp $latest_stg_file_path stg.json
+git add stg.json
+git commit -m "stg.json update"
+git push
