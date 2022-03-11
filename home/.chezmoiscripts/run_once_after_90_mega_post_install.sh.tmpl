@@ -1,0 +1,31 @@
+#!/bin/bash
+
+if [ "$(mega-whoami | grep "e-mail")" ]; then
+    echo "INFO Logged in Mega"
+else
+    echo "INFO Loggining in Mega"
+    mega-login {{ (bitwarden "item" "mega").login.username }} {{ (bitwarden "item" "mega").login.password }}
+fi
+
+function sync_mega_folder () {
+    # sync_mega_folder LOCAL_FOLDER CLOUD_FOLDER
+
+    if [ ! -d $1 ]; then
+        mkdir $1
+    fi
+    
+    if [ ! -d $2 ]; then
+        {
+            mega-sync $1 $2
+        } || {
+            echo "WARNING Cloud folder $2 is already synced"
+        }
+    fi
+}
+
+echo "INFO Syncing common Mega folders"
+sync_mega_folder ~/cloud/.vpn .vpn
+sync_mega_folder ~/cloud/.ssh .ssh
+sync_mega_folder ~/cloud/pictures pictures
+sync_mega_folder ~/cloud/documents documents
+sync_mega_folder ~/cloud/university university

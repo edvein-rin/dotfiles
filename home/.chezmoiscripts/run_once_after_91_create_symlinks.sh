@@ -5,7 +5,7 @@ create_folder_symlink () {
 
     if [ -d $1 ]; then
         {
-            ln -s $1 $2
+            ln -sn $1 $2
         } || {
             echo "WARNING Symlink \"$2\" is already created"
         }

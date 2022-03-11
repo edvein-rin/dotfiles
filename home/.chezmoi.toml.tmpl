@@ -84,6 +84,7 @@
     aur = """
         antigen-git
         megasync
+        megacmd
         rofi-power-menu
         skypeforlinux-stable-bin
         slack-desktop
@@ -104,6 +105,9 @@
 
 [data.neofetch]
     image_source = "~/pictures/.config/neofetch"
+
+[data.bitwarden]
+    email = {{ $personal_email | quote }}
 
 [git]
     autoCommit = true
