@@ -47,6 +47,12 @@ Run `sh ./install.sh` and follow its instructions.
   arch
   aur
   snap
+
+[data.neofetch]
+  image_source
+
+[data.bitwarden]
+  email
 ```
 
 ### Folder Tree Structure
