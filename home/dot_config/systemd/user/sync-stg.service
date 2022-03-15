@@ -5,7 +5,7 @@ Description=Syncs tabs of Firefox addon STG in gist
 Type=oneshot
 RemainAfterExit=true
 ExecStart=/bin/true
-ExecStop=~/scripts/sync-stg.sh
+ExecStop=%h/scripts/sync-stg.sh
 
 [Install]
 WantedBy=multi-user.target

@@ -68,7 +68,6 @@ work/**
 .config/session
 .config/skypeforlinux
 .config/spotify
-.config/systemd
 .config/thefuck
 .config/torbrowser
 .config/user-dirs.dirs
