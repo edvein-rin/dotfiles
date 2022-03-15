@@ -1,0 +1,11 @@
+[Unit]
+Description=Syncs tabs of Firefox addon STG in gist
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=/bin/true
+ExecStop=~/scripts/sync-stg.sh
+
+[Install]
+WantedBy=multi-user.target

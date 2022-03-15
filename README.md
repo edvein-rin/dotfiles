@@ -7,8 +7,7 @@ Powered by [chezmoi](https://github.com/twpayne/chezmoi).
 Run `sh ./install.sh` and follow its instructions.
 
 ### TODO
-0. Get rid of entering Bitwarden password each step.
-1. Run `scripts/stg.sh` on startup.
+1. Get rid of entering Bitwarden password each step.
 2. Remove simple Spotify from drun.
 3. Configure git pager Delta.
 4. Autostart apps based on `.data.is_for_work`.
