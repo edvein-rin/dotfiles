@@ -8,4 +8,4 @@ ExecStart=/bin/true
 ExecStop=%h/scripts/sync-stg.sh
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
