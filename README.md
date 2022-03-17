@@ -13,6 +13,10 @@ Run `sh ./install.sh` and follow its instructions.
 4. Customize separate from nvim vim config for simple file edit.
 5. Colorize logging of what's happening.
 6. Remove a part of `config/xfce5/xfconf/xfce-perchannel-xml/displays.xml` from chezmoi that always updates. Same with Thunar.
+7. Fix sync-stg.service (does nothing or crashes).
+8. Update SurfingKeys config due to addon update.
+9. Autostart for apps when is_for_work.
+10. Script + alias for starting VPN.
 
 ### Data
 ```js
@@ -82,7 +86,7 @@ Run `sh ./install.sh` and follow its instructions.
 
 ### Packages
 
-Stored at [`[data.packages]`](https://github.com/edvein-rin/dotfiles/blob/main/home/.chezmoi.toml.tmpl#L23) table at `.chezmoi.toml.templ`:
+Stored at [`[data.packages]`](https://github.com/edvein-rin/dotfiles/blob/main/home/.chezmoi.toml.tmpl#L47) table at `.chezmoi.toml.templ`:
 ```go
 [data.packages]
   arch = """
