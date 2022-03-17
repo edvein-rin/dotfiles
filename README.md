@@ -7,13 +7,12 @@ Powered by [chezmoi](https://github.com/twpayne/chezmoi).
 Run `sh ./install.sh` and follow its instructions.
 
 ### TODO
-1. Get rid of entering Bitwarden password each step.
-2. Remove simple Spotify from drun.
-3. Configure git pager Delta.
-4. Autostart apps based on `.data.is_for_work`.
-5. Customize separate from nvim vim config for simple file edit.
-6. Colorize logging of what's happening.
-7. Remove a part of `config/xfce5/xfconf/xfce-perchannel-xml/displays.xml` from chezmoi that always updates. Same with Thunar.
+1. Remove simple Spotify from drun.
+2. Configure git pager Delta.
+3. Autostart apps based on `.data.is_for_work`.
+4. Customize separate from nvim vim config for simple file edit.
+5. Colorize logging of what's happening.
+6. Remove a part of `config/xfce5/xfconf/xfce-perchannel-xml/displays.xml` from chezmoi that always updates. Same with Thunar.
 
 ### Data
 ```js

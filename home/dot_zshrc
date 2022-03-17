@@ -36,6 +36,11 @@ antigen apply
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 
+alias c="xclip" # pwd | c
+alias C="xclip -selection clipboard"
+alias v="xclip -o" # cd `v`
+alias V="xclip -o -selection clipboard"
+
 alias ls="exa"
 alias l='ls -lbF' # --long --binary --clasify
 alias la='ls -la' # --long --all

@@ -1,0 +1,32 @@
+#!/bin/bash
+
+function bitwarden_login () {
+    {
+        bw login {{ .bitwarden.email }}
+    } || {
+        bitwarden_login
+    }
+}
+
+bw login --check > /dev/null 2>&1
+if test $? -eq 0; then
+    echo "INFO Logged in in Bitwarden"
+else
+    echo "INFO Bitwarden login"
+    bitwarden_login
+fi
+
+bw unlock --check > /dev/null 2>&1
+if test $? -eq 0; then
+    echo "INFO Bitwarden vault is unlocked"
+else
+    echo "ERROR Bitwarden vault is locked. Unlock by running the command:"
+    COMMAND='export BW_SESSION=$(bw unlock --raw)'
+    echo $COMMAND
+    echo "This command is copied in your clipboard"
+    echo -n $COMMAND | xclip -selection clipboard
+    exit 1
+fi
+
+echo "INFO Bitwarden syncing"
+bw sync

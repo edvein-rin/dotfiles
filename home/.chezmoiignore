@@ -8,6 +8,15 @@ pictures/**
 university/**
 work/**
 
+# Default Manjaro Folders
+Documents
+Downloads
+Pictures
+University
+Music
+Public
+Templates
+Videos
 
 .ICEauthority
 .SpaceVim
