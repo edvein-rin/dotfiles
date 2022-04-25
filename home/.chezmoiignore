@@ -79,8 +79,6 @@ Videos
 .config/spotify
 .config/thefuck
 .config/torbrowser
-.config/user-dirs.dirs
-.config/user-dirs.locale
 .config/viewnior
 .config/vlc
 .config/volumeicon
