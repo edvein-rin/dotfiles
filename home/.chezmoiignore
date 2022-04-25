@@ -29,6 +29,7 @@ Videos
 .cargo
 .cert
 
+.config/Bitwarden CLI
 .config/Code
 .config/Code - OSS
 .config/Electron
@@ -77,12 +78,16 @@ Videos
 .config/session
 .config/skypeforlinux
 .config/spotify
+.config/systemd/user/default.target.wants
+.config/systemd/user/multi-user.target.wants
+.config/systemd/user/protonvpn_reconnect.service
 .config/thefuck
 .config/torbrowser
 .config/viewnior
 .config/vlc
 .config/volumeicon
 .config/yarn
+.config/yay
 .config/zoomus.conf
 
 .dir_colors
@@ -121,4 +126,5 @@ Videos
 .zoom
 .zsh_history
 .zshrc.*
+.megaCmd
 snap
