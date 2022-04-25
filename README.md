@@ -15,8 +15,7 @@ Run `sh ./install.sh` and follow its instructions.
 6. Remove a part of `config/xfce5/xfconf/xfce-perchannel-xml/displays.xml` from chezmoi that always updates. Same with Thunar.
 7. Fix sync-stg.service (does nothing or crashes).
 8. Update SurfingKeys config due to addon update.
-9. Autostart for apps when is_for_work.
-10. Script + alias for starting VPN.
+9. Script + alias for starting VPN.
 
 ### Data
 ```js
