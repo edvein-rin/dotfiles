@@ -6,17 +6,6 @@ Powered by [chezmoi](https://github.com/twpayne/chezmoi).
 
 Run `sh ./install.sh` and follow its instructions.
 
-### TODO
-1. Remove simple Spotify from drun.
-2. Configure git pager Delta.
-3. Autostart apps based on `.data.is_for_work`.
-4. Customize separate from nvim vim config for simple file edit.
-5. Colorize logging of what's happening.
-6. Remove a part of `config/xfce5/xfconf/xfce-perchannel-xml/displays.xml` from chezmoi that always updates. Same with Thunar.
-7. Fix sync-stg.service (does nothing or crashes).
-8. Update SurfingKeys config due to addon update.
-9. Script + alias for starting VPN.
-
 ### Data
 ```js
 [data.flags]
@@ -96,3 +85,14 @@ Stored at [`[data.packages]`](https://github.com/edvein-rin/dotfiles/blob/main/h
   """
   ...
 ```
+
+### TODO
+1. Remove simple Spotify from drun.
+2. Configure git pager Delta.
+3. Autostart apps based on `.data.is_for_work`.
+4. Customize separate from nvim vim config for simple file edit.
+5. Colorize logging of what's happening.
+6. Remove a part of `config/xfce5/xfconf/xfce-perchannel-xml/displays.xml` from chezmoi that always updates. Same with Thunar.
+7. Fix sync-stg.service (does nothing or crashes).
+8. Update SurfingKeys config due to addon update.
+9. Script + alias for starting VPN.
