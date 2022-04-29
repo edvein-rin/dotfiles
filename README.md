@@ -4,7 +4,11 @@ Powered by [chezmoi](https://github.com/twpayne/chezmoi).
 
 ### Installation
 
-Run `sh ./install.sh` and follow its instructions.
+Run
+```
+chezmoi init --apply https://github.com/edvein-rin/dotfiles.git
+```
+and follow instructions.
 
 ### Data
 ```js
