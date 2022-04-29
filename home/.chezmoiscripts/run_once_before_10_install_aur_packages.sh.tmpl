@@ -6,7 +6,7 @@
     echo "INFO Installing yay packages"
     yay -Syy --noconfirm
     yay -Syu --noconfirm
-    yay -S "${packages[*]}" --noconfirm --needed --verbose
+    yay -S ${packages[*]} --noconfirm --needed --verbose
 {{- else -}}
     echo "INFO DEV MODE Skipping installing yay packages"
 {{- end -}}
