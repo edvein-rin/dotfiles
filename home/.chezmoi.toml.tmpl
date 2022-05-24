@@ -18,9 +18,9 @@
 {{- $personal_username := "edvein-rin" -}}
 {{- $personal_email := "edveinrin@gmail.com" -}}
 
-{{- $business_nickname := "e.tsakhlo" -}}
-{{- $business_username := "e.tsakhlo" -}}
-{{- $business_email := "e.tsakhlo@smartweb.com.ua" -}}
+{{- $business_nickname := "e-tsakhlo" -}}
+{{- $business_username := "e-tsakhlo" -}}
+{{- $business_email := "eduard.tsakhlo@voypost.com" -}}
 
 {{- $name := "Eduard Tsakhlo" -}}
 {{- $nickname := $is_for_work | ternary $business_nickname $personal_nickname -}}
@@ -71,12 +71,12 @@
         thefuck
         zoxide
         git-delta
+        vlc
         {{ if $is_for_work -}}
         opera
         pgadmin4
         {{- end }}
         {{ if $is_personal -}}
-        vlc
         krita
         jupyter-notebook
         libreoffice-still
@@ -91,8 +91,8 @@
         spotify
         spotify-adblock 
         libpdfium-nojs
-        {{ if $is_for_work -}}
         google-chrome
+        {{ if $is_for_work -}}
         {{- end }}
         {{ if $is_personal -}}
         pureref
