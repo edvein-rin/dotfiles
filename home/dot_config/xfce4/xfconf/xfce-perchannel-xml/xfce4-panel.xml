@@ -3,7 +3,6 @@
 <channel name="xfce4-panel" version="1.0">
   <property name="panels" type="array">
     <value type="int" value="0"/>
-    <value type="int" value="1"/>
     <property name="panel-0" type="empty">
       <property name="position" type="string" value="p=8;x=2880;y=1065"/>
       <property name="length" type="uint" value="100"/>
@@ -29,31 +28,6 @@
       <property name="span-monitors" type="bool" value="false"/>
       <property name="output-name" type="string" value="Primary"/>
     </property>
-    <property name="panel-1" type="empty">
-      <property name="position" type="string" value="p=8;x=960;y=1061"/>
-      <property name="size" type="uint" value="36"/>
-      <property name="position-locked" type="bool" value="true"/>
-      <property name="span-monitors" type="bool" value="false"/>
-      <property name="length" type="uint" value="100"/>
-      <property name="plugin-ids" type="array">
-        <value type="int" value="2"/>
-        <value type="int" value="34"/>
-        <value type="int" value="29"/>
-        <value type="int" value="8"/>
-        <value type="int" value="23"/>
-        <value type="int" value="33"/>
-        <value type="int" value="20"/>
-        <value type="int" value="31"/>
-        <value type="int" value="30"/>
-        <value type="int" value="32"/>
-        <value type="int" value="17"/>
-        <value type="int" value="27"/>
-      </property>
-      <property name="icon-size" type="uint" value="16"/>
-      <property name="nrows" type="uint" value="1"/>
-      <property name="disable-struts" type="bool" value="false"/>
-      <property name="output-name" type="string" value="HDMI-1"/>
-    </property>
   </property>
   <property name="plugins" type="empty">
     <property name="plugin-4" type="string" value="pager">
@@ -74,6 +48,8 @@
       </property>
       <property name="show-frame" type="bool" value="false"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="wi-fi network connection “toskana_5g” active: toskana_5g (100%)"/>
+        <value type="string" value="bluetooth disabled"/>
         <value type="string" value="thunar"/>
         <value type="string" value="xfce4-power-manager"/>
         <value type="string" value="networkmanager applet"/>
@@ -81,6 +57,10 @@
         <value type="string" value="clipman"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="zoom "/>
+        <value type="string" value="vlc"/>
+        <value type="string" value="SimpleScreenRecorder"/>
+        <value type="string" value="flameshot"/>
         <value type="string" value="ProtonVPN Tray"/>
         <value type="string" value="zoom"/>
         <value type="string" value="Mathpix Snipping Tool"/>
@@ -101,7 +81,7 @@
     </property>
     <property name="plugin-9" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="audacious;chromium.instance19051;chromium.instance2108;firefox.instance1345;firefox.instance1397;firefox.instance1431;firefox.instance1434;firefox.instance1436;firefox.instance1437;firefox.instance1438;firefox.instance1447;firefox.instance1451;firefox.instance1453;firefox.instance1454;firefox.instance1456;firefox.instance1457;firefox.instance1458;firefox.instance1462;firefox.instance1466;firefox.instance1468;firefox.instance1471;firefox.instance1474;firefox.instance1477;firefox.instance1480;firefox.instance1482;firefox.instance1483;firefox.instance1486;firefox.instance1487;firefox.instance1491;firefox.instance1492;firefox.instance1494;firefox.instance1495;firefox.instance1498;firefox.instance1499;firefox.instance1503;firefox.instance1504;firefox.instance1505;firefox.instance1506;firefox.instance1509;firefox.instance1510;firefox.instance1513;firefox.instance1514;firefox.instance1516;firefox.instance1517;firefox.instance1522;firefox.instance1523;firefox.instance1531;firefox.instance1535;firefox.instance1542;firefox.instance1552;firefox.instance1557;firefox.instance1559;firefox.instance1563;firefox.instance1570;firefox.instance1578;firefox.instance1587;firefox.instance1616;firefox.instance1653;firefox.instance1675;firefox.instance1687;firefox.instance1705;firefox.instance1711;firefox.instance1737;firefox.instance1773;firefox.instance1789;firefox.instance1834;firefox.instance1835;firefox.instance1854;firefox.instance1886;firefox.instance1890;firefox.instance1932;firefox.instance1933;firefox.instance2120;firefox.instance2133;firefox.instance2198;firefox.instance2249;firefox.instance2421;firefox.instance2490;firefox.instance3414;firefox.instance5122;firefox.instance6353;firefox.instance7141;firefox.instance7959;firefox.instance8882;firefox.instance8898;spotify"/>
+      <property name="mpris-players" type="string" value="audacious;chromium.instance19051;chromium.instance2108;firefox.instance1345;firefox.instance1397;firefox.instance1413;firefox.instance1427;firefox.instance1430;firefox.instance1431;firefox.instance1434;firefox.instance1436;firefox.instance1437;firefox.instance1438;firefox.instance1442;firefox.instance1445;firefox.instance1447;firefox.instance1449;firefox.instance1451;firefox.instance1453;firefox.instance1454;firefox.instance1456;firefox.instance1457;firefox.instance1458;firefox.instance1462;firefox.instance1466;firefox.instance1468;firefox.instance1471;firefox.instance1474;firefox.instance1477;firefox.instance1480;firefox.instance1482;firefox.instance1483;firefox.instance1485;firefox.instance1486;firefox.instance1487;firefox.instance1491;firefox.instance1492;firefox.instance1494;firefox.instance1495;firefox.instance1498;firefox.instance1499;firefox.instance1503;firefox.instance1504;firefox.instance1505;firefox.instance1506;firefox.instance1509;firefox.instance1510;firefox.instance1513;firefox.instance1514;firefox.instance1516;firefox.instance1517;firefox.instance1522;firefox.instance1523;firefox.instance1531;firefox.instance1535;firefox.instance1542;firefox.instance1543;firefox.instance1552;firefox.instance1557;firefox.instance1559;firefox.instance1563;firefox.instance1570;firefox.instance1578;firefox.instance1587;firefox.instance1611;firefox.instance1616;firefox.instance1653;firefox.instance1675;firefox.instance1687;firefox.instance1705;firefox.instance1711;firefox.instance1737;firefox.instance1773;firefox.instance1789;firefox.instance1834;firefox.instance1835;firefox.instance1848;firefox.instance1854;firefox.instance1886;firefox.instance1890;firefox.instance1932;firefox.instance1933;firefox.instance1979;firefox.instance2120;firefox.instance2133;firefox.instance2198;firefox.instance2249;firefox.instance2421;firefox.instance2490;firefox.instance3414;firefox.instance3549;firefox.instance43278;firefox.instance5122;firefox.instance6353;firefox.instance7141;firefox.instance7959;firefox.instance8882;firefox.instance8898;firefox.instance9426;spotify;vlc"/>
       <property name="blacklisted-players" type="string" value=""/>
     </property>
     <property name="plugin-5" type="string" value="clock">
@@ -119,87 +99,6 @@
       <property name="display-tooltip-icon" type="bool" value="true"/>
     </property>
     <property name="plugin-1" type="string" value="battery"/>
-    <property name="plugin-2" type="string" value="pager">
-      <property name="rows" type="uint" value="1"/>
-      <property name="miniature-view" type="bool" value="false"/>
-    </property>
-    <property name="plugin-8" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-      <property name="expand" type="bool" value="true"/>
-    </property>
-    <property name="plugin-17" type="string" value="cpugraph"/>
-    <property name="plugin-20" type="string" value="fsguard"/>
-    <property name="plugin-23" type="string" value="netload"/>
-    <property name="plugin-27" type="string" value="systemload">
-      <property name="cpu" type="empty">
-        <property name="label" type="string" value="CPU"/>
-      </property>
-      <property name="memory" type="empty">
-        <property name="label" type="string" value="MEM"/>
-        <property name="enabled" type="bool" value="true"/>
-      </property>
-      <property name="network" type="empty">
-        <property name="label" type="string" value="NET"/>
-        <property name="enabled" type="bool" value="false"/>
-      </property>
-      <property name="swap" type="empty">
-        <property name="label" type="string" value="SWAP"/>
-      </property>
-      <property name="uptime" type="empty">
-        <property name="enabled" type="bool" value="true"/>
-      </property>
-    </property>
-    <property name="plugin-29" type="string" value="weather">
-      <property name="location" type="empty">
-        <property name="name" type="string" value="Brovary, Ukraine"/>
-        <property name="latitude" type="string" value="50.518200"/>
-        <property name="longitude" type="string" value="30.804100"/>
-      </property>
-      <property name="msl" type="int" value="132"/>
-      <property name="timezone" type="string" value="Europe/Kiev"/>
-      <property name="offset" type="string" value="+02:00"/>
-      <property name="cache-max-age" type="int" value="172800"/>
-      <property name="power-saving" type="bool" value="true"/>
-      <property name="units" type="empty">
-        <property name="temperature" type="int" value="0"/>
-        <property name="pressure" type="int" value="0"/>
-        <property name="windspeed" type="int" value="2"/>
-        <property name="precipitation" type="int" value="0"/>
-        <property name="altitude" type="int" value="0"/>
-        <property name="apparent-temperature" type="int" value="0"/>
-      </property>
-      <property name="round" type="bool" value="true"/>
-      <property name="single-row" type="bool" value="true"/>
-      <property name="tooltip-style" type="int" value="1"/>
-      <property name="forecast" type="empty">
-        <property name="layout" type="int" value="1"/>
-        <property name="days" type="int" value="5"/>
-      </property>
-      <property name="theme-dir" type="string" value="/usr/share/xfce4/weather/icons/liquid-dark"/>
-      <property name="scrollbox" type="empty">
-        <property name="show" type="bool" value="true"/>
-        <property name="animate" type="bool" value="true"/>
-        <property name="lines" type="int" value="1"/>
-        <property name="color" type="string" value="rgba(0,0,0,0)"/>
-        <property name="use-color" type="bool" value="false"/>
-      </property>
-      <property name="labels" type="empty">
-        <property name="label0" type="int" value="3"/>
-      </property>
-    </property>
-    <property name="plugin-30" type="string" value="fsguard"/>
-    <property name="plugin-31" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-    </property>
-    <property name="plugin-32" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-    </property>
-    <property name="plugin-33" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-    </property>
-    <property name="plugin-34" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-    </property>
   </property>
   <property name="configver" type="int" value="2"/>
 </channel>
